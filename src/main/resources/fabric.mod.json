@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "deuf_refabricated",
+  "version": "1.0.0",
+
+  "name": "DEUF Refabricated",
+  "description": "Prevents duplicated entity UUIDs, fixing log spam and crashes.",
+  "authors": [
+    "ElocinDev"
+  ],
+  "contact": {
+    "homepage": "https://curseforge.com/members/elocindev/projects",
+    "sources": "https://github.com/nvb-uy/DEUF-Refabricated"
+  },
+
+  "license": "MIT",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "elocindev.deuf_refabricated.DEUF_Refabricated"
+    ]
+  },
+  "mixins": [
+    "deuf.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "java": ">=17"
+  }
+}
