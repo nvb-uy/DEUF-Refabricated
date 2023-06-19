@@ -9,8 +9,6 @@ import com.google.gson.GsonBuilder;
 
 import net.fabricmc.loader.api.FabricLoader;
 
-
-
 public class ConfigBuilder {
     public static final Gson BUILDER = (new GsonBuilder()).setPrettyPrinting().create();
   

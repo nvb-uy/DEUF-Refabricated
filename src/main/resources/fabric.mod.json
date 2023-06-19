@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "deuf_refabricated",
-  "version": "1.0.0",
+  "version": "1.1.0",
 
   "name": "DEUF Refabricated",
   "description": "Prevents duplicated entity UUIDs, fixing log spam and crashes.",

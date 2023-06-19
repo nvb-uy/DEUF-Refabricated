@@ -2,9 +2,9 @@ package elocindev.deuf_refabricated.mixin;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.registry.Registries;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.registry.Registry;
 
 import java.util.UUID;
 
@@ -34,7 +34,7 @@ public class ServerWorldMixin {
         
         
         if (DEUF_Refabricated.Config.enable_logging)
-                DEUF_Refabricated.LOGGER.info("Changing UUID of entity {} that already existed from {} to {}", Registry.ENTITY_TYPE.getKey(entity.getType()).toString(), uuid.toString(), newUUID.toString());
+                DEUF_Refabricated.LOGGER.info("Changing UUID of entity {} that already existed from {} to {}", Registries.ENTITY_TYPE.getKey(entity.getType()).toString(), uuid.toString(), newUUID.toString());
         }
     }
 }
